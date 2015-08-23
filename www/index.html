@@ -27,7 +27,7 @@
       <div id="searchbox" class="input-group" style="width:97%; margin:auto;">
         <input type="text" id="search" class="form-control" placeholder="Search for..." ng-model="searchText">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Go!</button>
+          <button id="searchBtn" class="btn btn-default" type="button" ng-click="searchUsers()">Go!</button>
         </span>
       </div>
       <div class="list-group" style="width:97%; margin:auto;">
@@ -60,7 +60,7 @@
                 </div>
               </div>
               <button type="button" class="btn btn-info pull-left" ng-click="getMyCtrlScope().search=true">Home</button>
-              <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+              <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right" ng-click="submitUser()">
             </div>
           </form>
         </div>
