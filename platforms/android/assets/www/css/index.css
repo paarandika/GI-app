@@ -31,18 +31,17 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
 .online{
   background-color: #3AC10B;
-  height: 2px;
+  height: 3px;
   width: 100%;
 }
 
 .offline{
   background-color: #AD4C4C;
-  height: 2px;
+  height: 3px;
   width: 100%;
 }
