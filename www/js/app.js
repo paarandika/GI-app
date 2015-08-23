@@ -6,11 +6,12 @@ app.controller("appCtrl", function($scope) {
     $scope.lastSync = localStorage.getItem('lastSync');
     if ($scope.lastSync === null) {
       localStorage.setItem('lastSync', 0);
+      $scope.lastSync =0;
     }
 
     if (online) {
       $.post(rootServer + "sync.php", {
-          time: 2
+          time: $scope.lastSync
         },
         function(d, status) {
           alert(d);

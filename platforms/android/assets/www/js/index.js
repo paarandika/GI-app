@@ -56,8 +56,8 @@ function updater() {
     });
   });
   db.transaction(function(tx) {
-    tx.executeSql("UPDATE user synced=1 WHERE synced=?", [0], function(tx, res) {
-      alert("insertId: " + res.rowsAffected);
+    tx.executeSql("UPDATE user SET synced=1 WHERE synced=?", [0], function(tx, res) {
+      alert("updateId: " + res.rowsAffected);
     });
   });
 }
